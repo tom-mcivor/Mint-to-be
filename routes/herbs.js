@@ -6,8 +6,8 @@ const router = express.Router()
 
 router.get('/', (req, res) => {
   db.getHerbs()
-    .then((users) => {
-      res.render('index', { users: users })
+    .then((herbs) => {
+      res.render('index', { herbs })
     })
     .catch((err) => {
       res.status(500).send('DATABASE ERROR: ' + err.message)

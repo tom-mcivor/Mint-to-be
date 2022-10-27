@@ -1,2 +1,16 @@
+<h2>Mint to be</h2>
 
-<p>Hello world!!</p>
+<ul class="cards">
+  {{#each herbs}}
+  <li class="card">
+  <img class="img" src="images/{{name}}.jpg" alt="{{name}}"><br>
+    <div class="herbs">
+      <span class="title">{{name}}</span>
+      <p class="data">Height: {{height}}</p>
+      <br>
+      <a href="/herb/{{id}}/edit">edit herb</a>
+    </div>
+  </li>
+  <br>
+  {{/each}}
+</ul>
