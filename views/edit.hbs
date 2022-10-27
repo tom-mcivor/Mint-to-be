@@ -2,12 +2,30 @@
   {{!-- {{#each herbs}} --}}
   <li class="card">
   <img class="img" src="images/{{name}}.jpg" alt="{{name}}"><br>
+
     <div class="herbs">
-      <span class="title">{{name}}</span>
-      <p class="data">Height: {{height}}</p>
+
+      <span class="title"><h2>Edit {{name}}</h2></span>
       <br>
 
+      <form method="POST" action="/edit" class="form">
+        <input type="hidden" name="id" value="{{id}}">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Name" value="{{name}}">
+
+        <label for="name">Height:</label>
+        <input type="text" id="height" name="height" placeholder="Height" value="{{height}}">   
+        
+        <div></div>
+        <button>Update herb</button>
+      </form>
+
+
     </div>
+
+
+
   </li>
   <br>
   {{!-- {{/each}} --}}
