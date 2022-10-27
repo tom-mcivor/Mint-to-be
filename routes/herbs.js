@@ -25,5 +25,4 @@ router.get('/herb/:id/delete', (req, res) => {
     })
 })
 
-
 module.exports = router
