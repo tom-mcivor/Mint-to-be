@@ -1,11 +1,19 @@
 * {
-  background-color: blue;
+
+}
+
+
+
+html {
+  background: linear-gradient(#e6646456, #9198e55e);
+  background-image: url('background.jpg');
+  background-size: cover;
 }
 
 p {
- color: blue;
+
 }
 
 body { 
-  background-color: blue;
+
 }
