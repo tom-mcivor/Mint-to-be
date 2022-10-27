@@ -89,3 +89,26 @@ header{
   padding-left: 50px;
   font-size: 35px;
 }
+
+/* Add button */
+
+.add {
+  text-align: center;
+}
+
+.add-button {
+  padding: 5px;
+  color: black;
+  background-color: white;
+}
+
+/* add page */
+
+.add-form {
+  text-align: center;
+}
+
+#add-name, #add-germination-id, #add-height, .add-submit {
+color: black;
+}
+
