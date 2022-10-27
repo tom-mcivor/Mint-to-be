@@ -89,3 +89,11 @@ header{
   padding-left: 50px;
   font-size: 35px;
 }
+
+body > a {
+text-decoration: none;
+}
+
+body > a:hover {
+color: black;
+}
