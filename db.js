@@ -6,6 +6,7 @@ module.exports = {
   getHerbs: getHerbs,
   getHerb: getHerb,
   deleteHerb: deleteHerb,
+  editHerb: editHerb,
 }
 
 function getHerbs(db = connection) {
@@ -18,4 +19,8 @@ function getHerb(id, db = connection) {
 
 function deleteHerb(id, db = connection) {
   return db('herbs').where('id', id).del()
+}
+
+function editHerb(updatedHerb, db = connection) {
+  return db('herbs').where('id', updatedHerb.id).update({ "name": updatedHerb.name, "height":updatedHerb.height })
 }
