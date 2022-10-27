@@ -34,3 +34,10 @@ p {
 body { 
   background-color: brown;
 }
+
+.img {
+  border-radius: 25%;
+  object-fit: cover;
+  width: 230px;
+  height: 230px;
+}
