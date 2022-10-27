@@ -36,7 +36,7 @@ function getGerminationInfo(id, db = connection) {
     'watering',
     'light'
     )
-  .where('herbId', id)
+  .where('herbId', id).first()
 }
 
 
