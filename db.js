@@ -6,6 +6,7 @@ module.exports = {
   getHerbs: getHerbs,
   getHerb: getHerb,
   addHerb: addHerb,
+  deleteHerb: deleteHerb,
 }
 
 function getHerbs(db = connection) {
