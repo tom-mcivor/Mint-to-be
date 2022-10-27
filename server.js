@@ -3,6 +3,7 @@ const hbs = require('express-handlebars')
 
 const herbRoutes = require('./routes/herbs')
 const editRoutes = require('./routes/edit')
+const infoRoutes = require('./routes/info')
 
 const server = express()
 
@@ -17,5 +18,6 @@ server.use(express.urlencoded({ extended: true }))
 // Routes
 server.use('/', herbRoutes)
 server.use('/', editRoutes)
+server.use('/info', infoRoutes)
 
 module.exports = server
