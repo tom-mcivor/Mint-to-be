@@ -1,6 +1,8 @@
 * {
  color: white;
  font-family: 'Fuzzy Bubbles';
+ font-weight: bold;
+ font-size: 1.05em;
 
 }
 
@@ -15,7 +17,7 @@ html {
   background-image: linear-gradient(
     to bottom,
     rgba(36, 78, 46, 0.531),
-    rgba(0, 0, 0, 0.9)
+    rgba(0, 0, 0, 0.975)
   ), url('https://images.unsplash.com/photo-1532092367580-3bd5bc78dd9d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
 
 
@@ -27,12 +29,8 @@ html {
  
 }
 
-p {
-}
-
 body { 
   /* width: 100vw; */
-  background-color: rgba(165, 42, 42, 0.5);
 
   justify-content: center;
   align-content: center;
@@ -52,19 +50,42 @@ body {
 }
 
 .herbs {
-  justify-content: space-between;
   /* display: flex;
   flex-direction: row; */
   text-align: left;
   /* align-content: center; */
   /* align-items: center; */
   padding-left: 3em;
-  padding-top: 3em;
+  padding-top: 2em;
+  
+    text-align: center;
 }
 
 li {
   justify-content: center;
   align-content: center;
   align-content: center;
+}
 
+body > ul > li > div > a{
+  color: rgb(172, 152, 152);
+  text-decoration: none;
+}
+body > ul > li > div > a:hover{
+
+  color: rgb(49, 0, 105);
+  text-decoration: none;
+}
+
+body > ul > li:hover {
+  background-color: rgba(11, 114, 25, 0.42);
+}
+
+footer{
+  text-align: center;
+}
+
+header{
+  padding-left: 50px;
+  font-size: 35px;
 }
