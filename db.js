@@ -5,8 +5,10 @@ const connection = require('knex')(config)
 module.exports = {
   getHerbs: getHerbs,
   getHerb: getHerb,
+  addHerb: addHerb,
   deleteHerb: deleteHerb,
   getGerminationInfo: getGerminationInfo,
+  editHerb: editHerb,
 }
 
 function getHerbs(db = connection) {
@@ -16,6 +18,7 @@ function getHerbs(db = connection) {
 function getHerb(id, db = connection) {
   return db('herbs').where('id', id).first()
 }
+
 
 function deleteHerb(id, db = connection) {
   return db('herbs').where('id', id).del()
@@ -35,3 +38,17 @@ function getGerminationInfo(id, db = connection) {
     )
   .where('herbId', id)
 }
+
+
+function editHerb(updatedHerb, db = connection) {
+  return db('herbs').where('id', updatedHerb.id).update({ "name": updatedHerb.name, "height":updatedHerb.height })
+}
+
+function addHerb(name, height, germination_id, db = connection) {
+  return db('herbs').insert({
+    name,
+    height,
+    germination_id,
+  })
+}
+

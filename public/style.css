@@ -1,5 +1,5 @@
 * {
- color: white;
+ color: rgb(165, 161, 161);
  font-family: 'Fuzzy Bubbles';
  font-weight: bold;
  font-size: 1.05em;
@@ -97,3 +97,26 @@ text-decoration: none;
 body > a:hover {
 color: black;
 }
+
+/* Add button */
+
+.add {
+  text-align: center;
+}
+
+.add-button {
+  padding: 5px;
+  color: black;
+  background-color: white;
+}
+
+/* add page */
+
+.add-form {
+  text-align: center;
+}
+
+#add-name, #add-germination-id, #add-height, .add-submit {
+color: black;
+}
+

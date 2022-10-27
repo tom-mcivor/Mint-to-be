@@ -17,7 +17,7 @@ server.use(express.urlencoded({ extended: true }))
 
 // Routes
 server.use('/', herbRoutes)
-server.use('/herb', editRoutes)
+server.use('/', editRoutes)
 server.use('/info', infoRoutes)
 
 module.exports = server

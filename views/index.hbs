@@ -8,10 +8,16 @@
       <p class="data">Height: {{height}}</p>
       <br>
       <a href="/info/{{id}}">more info</a><br>
-      <a href="/herb/{{id}}/edit">edit herb</a><br>
+      <a href="/{{id}}/edit">edit herb</a><br>
       <a href="/herb/{{id}}/delete">delete herb</a>
     </div>
   </li>
   <br>
   {{/each}}
 </ul>
+
+
+<div class="add">
+<a href="/add"><button class="add-button">Add new herb</button></a>
+</div>
+
