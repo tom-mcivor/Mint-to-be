@@ -1,8 +1,9 @@
 * {
- color: rgb(165, 161, 161);
+ color: rgb(233, 233, 233);
  font-family: 'Fuzzy Bubbles';
  font-weight: bold;
  font-size: 1.05em;
+ text-shadow: 2px 2px black;
 
 }
 
