@@ -81,6 +81,22 @@ body > ul > li:hover {
   background-color: rgba(11, 114, 25, 0.42);
 }
 
+#name{
+  color: black !important;
+}
+
+#height{
+  color: black !important;
+
+}
+
+body > ul > li > div > form > button{
+  color: rgb(49, 0, 105);
+  background-color: rgb(124, 121, 121);
+}
+
+
+
 footer{
   text-align: center;
 }
@@ -149,4 +165,25 @@ header {
 body > ul > li > div > a {
 
   color: rgb(133, 133, 172);
+}
+
+
+#add-name{
+  color: black;
+}
+#add-germination-id{
+  color: black;
+}
+#add-height{
+  color: black;
+}
+#germinationdates{
+  color: black;
+}
+#watering{
+  color: black;
+}
+
+body > form option{
+  color: rgba(0, 0, 0, 0.548);
 }
