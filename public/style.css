@@ -56,7 +56,6 @@ body {
   /* align-content: center; */
   /* align-items: center; */
   padding-left: 3em;
-  padding-top: 2em;
   
     text-align: center;
 }
@@ -115,8 +114,8 @@ color: black;
 
 .add-button:hover {
   padding: 5px;
-  color: rgb(255, 255, 255);
-  background-color: rgb(84, 91, 85);
+  color: rgb(189, 188, 190);
+  background-color: rgb(5, 54, 13);
   border-radius: 15px;
   border-style: solid;
   border-color: rgb(0, 0, 0);
@@ -140,4 +139,9 @@ color: black;
 header {
   text-align: left;
   padding: 50px 20px 20px 50px;
+}
+
+body > ul > li > div > a {
+
+  color: rgb(133, 133, 172);
 }
