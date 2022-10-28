@@ -21,9 +21,17 @@ router.get('/add', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-  const { name, height, germination } = req.body
+  const { name, height, germination, light, watering, germinationdates } =
+    req.body
   console.log(req.body)
   db.addHerb(name, height, germination)
+    .then(() => {
+      res.redirect('/')
+    })
+    .catch((err) => {
+      console.log(err)
+    })
+  db.addGermination(light, watering, germinationdates)
     .then(() => {
       res.redirect('/')
     })

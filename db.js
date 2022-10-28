@@ -9,6 +9,7 @@ module.exports = {
   deleteHerb: deleteHerb,
   getGerminationInfo: getGerminationInfo,
   editHerb: editHerb,
+  addGermination: addGermination,
 }
 
 function getHerbs(db = connection) {
@@ -19,29 +20,30 @@ function getHerb(id, db = connection) {
   return db('herbs').where('id', id).first()
 }
 
-
 function deleteHerb(id, db = connection) {
   return db('herbs').where('id', id).del()
 }
 
 function getGerminationInfo(id, db = connection) {
   return db('herbs')
-  .join('germination', 'herbs.germination_id', 'germination.id')
-  .select(
-    'name',
-    'height',
-    'herbs.id as herbId',
-    'germination.id as germinationId',
-    'germination_dates as germinationDates',
-    'watering',
-    'light'
+    .join('germination', 'herbs.germination_id', 'germination.id')
+    .select(
+      'name',
+      'height',
+      'herbs.id as herbId',
+      'germination.id as germinationId',
+      'germination_dates as germinationDates',
+      'watering',
+      'light'
     )
-  .where('herbId', id).first()
+    .where('herbId', id)
+    .first()
 }
 
-
 function editHerb(updatedHerb, db = connection) {
-  return db('herbs').where('id', updatedHerb.id).update({ "name": updatedHerb.name, "height":updatedHerb.height })
+  return db('herbs')
+    .where('id', updatedHerb.id)
+    .update({ name: updatedHerb.name, height: updatedHerb.height })
 }
 
 function addHerb(name, height, germination_id, db = connection) {
@@ -52,3 +54,10 @@ function addHerb(name, height, germination_id, db = connection) {
   })
 }
 
+function addGermination(light, watering, germination_dates, db = connection) {
+  return db('germination').insert({
+    light,
+    watering,
+    germination_dates,
+  })
+}

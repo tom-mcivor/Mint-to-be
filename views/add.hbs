@@ -1,10 +1,52 @@
 <form method="POST" action="/" class="add-form">
   <label>Name</label><br>
-  <input type="text" id="add-name" name="name"><br><br>
+  <select id="add-name" name="name">
+  <option value="Rosemary">Rosemary</option>
+  <option value="Mint">Mint</option>
+  <option value="Oregano">Oregano</option>
+  <option value="Coriander">Coriander</option>
+  <option value="Thyme">Thyme</option>
+  <option value="Basil">Basil</option>
+  <option value="Parsley">Parsley</option>
+</select><br><br>
   <label>Germination ID</label><br>
-  <input type="text" id="add-germination-id" name="germination"><br><br>
+  <select id="add-germination-id" name="germination">
+  <option value="201">201</option>
+  <option value="202">202</option>
+  <option value="203">203</option>
+  <option value="204">204</option>
+  <option value="205">205</option>
+  <option value="206">206</option>
+  <option value="207">207</option>
+</select><br><br>
   <label>Height</label><br>
-  <input type="text" id="add-height" name="height"><br><br>
-  <label>Upload an image URL</label><br>
+  <select id="add-height" name="height">
+  <option value="15cm to 30cm">15cm to 30cm</option>
+  <option value="30cm to 55cm">30cm to 55cm</option>
+  <option value="30cm to 60cm">30cm to 60cm</option>
+  <option value="30cm to 90cm">30cm to 90cm</option>
+  <option value="90cm to 150cm">90cm to 150cm</option>
+</select><br><br>
+<label>Germination dates</label><br>
+<select id="germinationdates" name="germinationdates">
+  <option value="Early spring">Early spring</option>
+  <option value="Autumn, spring, and winter">Autumn, spring, and winter</option>
+  <option value="Spring or early summer">Spring or early summer</option>
+  <option value="Spring or autumn">Spring or autumn</option>
+  <option value="Late spring and mid-autumn">Late spring and mid-autumn</option>
+</select><br><br>
+<label>Watering</label><br>
+<select id="watering" name="watering">
+  <option value="Require about 1 inch of water per week">Require about 1 inch of water per week</option>
+  <option value="Very little watering">Very little watering</option>
+  <option value="Water when soil is dry">Water when soil is dry</option>
+  <option value="Keep moist">Keep moist</option>
+</select><br><br>
+<label>Light</label><br>
+<select id="light" name="light">
+  <option value="Full sun">Full sun</option>
+  <option value="Part shade">Part shade</option>
+  <option value="Full shade">Full shade</option>
+</select><br><br>
   <button class="add-submit">Submit</button>
 </form>

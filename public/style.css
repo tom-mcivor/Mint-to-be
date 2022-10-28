@@ -106,8 +106,20 @@ color: black;
 
 .add-button {
   padding: 5px;
-  color: black;
-  background-color: white;
+  color: rgb(255, 255, 255);
+  background-color: rgb(23, 80, 32);
+  border-radius: 15px;
+  border-style: solid;
+  border-color: black;
+}
+
+.add-button:hover {
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(84, 91, 85);
+  border-radius: 15px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
 }
 
 /* add page */
@@ -116,11 +128,16 @@ color: black;
   text-align: center;
 }
 
-#add-name, #add-germination-id, #add-height, .add-submit {
+#add-name, #add-germination-id, #add-height, .add-submit, #watering, #light, #germinationdates {
 color: black;
 }
 
 #myFile {
   position: relative;
   left: 130px;
+}
+
+header {
+  text-align: left;
+  padding: 50px 20px 20px 50px;
 }
